@@ -1,0 +1,30 @@
+# Make your config
+
+[develop]
+[develop.log]
+level = "debug"
+[develop.http]
+host = "0.0.0.0"
+port = 3000
+[develop.database]
+host = "mdm-db"
+port = 8000
+dbnamespace = "dev"
+dbname = "doorlock"
+user = "NtransDevelop"
+password = "NtransDevelop"
+
+[production]
+[production.log]
+level = "info"
+[production.http]
+host = "0.0.0.0"
+port = 3000
+
+[production.database]
+host = "mdm-db"
+port = 8000
+dbnamespace = "prod"
+dbname = "doorlock"
+user = "test"
+password = "test"
