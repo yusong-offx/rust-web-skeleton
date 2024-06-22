@@ -10,7 +10,7 @@ pub struct Config {
 #[derive(Deserialize, Debug)]
 pub struct InnerConfig {
     // pub log: LogConfig,
-    // pub http: HttpConfig,
+    pub http: HttpConfig,
     // pub database: DatabaseConfig,
 }
 
@@ -19,11 +19,11 @@ pub struct InnerConfig {
 //     pub level: String,
 // }
 
-// #[derive(Deserialize, Debug)]
-// pub struct HttpConfig {
-//     pub host: String,
-//     pub port: u16,
-// }
+#[derive(Deserialize, Debug)]
+pub struct HttpConfig {
+    pub host: String,
+    pub port: u16,
+}
 // #[derive(Deserialize, Debug)]
 // pub struct DatabaseConfig {
 //     pub host: String,
